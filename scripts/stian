@@ -2,6 +2,9 @@
 
 # echo The Force is strong
 
+# figlet -f /home/stian/scripts/3d.flf "silence" | awk '{print "<!-- "$0"-->"}' > data.txt
+
+
 red=`tput setaf 1`
 bgc=`tput setab 7`
 reset=`tput sgr0`
