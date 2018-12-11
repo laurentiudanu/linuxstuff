@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source_folder=$HOME/'Documents'
+template_file=$source_folder/$1
+
+printf "Creating file...\n\n"
+sleep 1
+printf 'Nume\n\n-\n\n\n\nNume latin\n\n-\n\n\n\nParti utilizate\n\n-\n\n\n\nMod de administrare\n\n-\n\n\n\nContraindicatii\n\n-\n\n\n\nGlosar\n\n-' > $template_file
+printf "$1 is ready for editing\n\n";
+
