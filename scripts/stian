@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# echo The Force is strong
+
+red=`tput setaf 1`
+bgc=`tput setab 7`
+reset=`tput sgr0`
+
+num_quotes=10
+rand=$[ ( $RANDOM % $num_quotes ) + 1 ]
+
+case $rand in
+    1) quote="${red}${bgc}Some things Man was never meant to know. For everything else, there's Google.${reset}";;
+    2) quote="${red}${bgc}The Linux philosophy is 'Laugh in the face of danger. Oops. Wrong One. 'Do it yourself'. Yes, that's it.  -- Linus Torvalds${reset}";;
+    3) quote="${red}${bgc}... one of the main causes of the fall of the Roman Empire was that, lacking zero, they had no way to indicate successful termination of their C programs. -- Robert Firth${reset}";;
+    4) quote="${red}${bgc}There are 10 kinds of people in the world, those that understand trinary, those that don't, and those that confuse it with binary.${reset}";;
+    5) quote="${red}${bgc}My software never has bugs. It just develops random features.${reset}";;
+    6) quote="The only problem with troubleshooting is that sometimes trouble shoots back.";;
+    7) quote="If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.";;
+    8) quote="You know you're a geek when... You try to shoo a fly away from the monitor with your cursor. That just happened to me. It was scary.";;
+    9) quote="We all know Linux is great... it does infinite loops in 5 seconds. -- Linus Torvalds about the superiority of Linux on the Amterdam Linux Symposium";;
+    10) quote="By golly, I'm beginning to think Linux really *is* the best thing since sliced bread.  -- Vance Petree, Virginia Power";;
+esac
+
+echo -e $quote

@@ -1,0 +1,3 @@
+#!/bin/bash
+printf "Getting the weather report...\n"
+curl wttr.in

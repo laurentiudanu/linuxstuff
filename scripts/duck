@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+if  [[ $2 = "-e" ]]; then
+  surf https://duckduckgo.com/?q=$1
+else
+  lynx https://duckduckgo.com/?q=$1
+fi
+
