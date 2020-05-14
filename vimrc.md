@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set number
 set wrap linebreak nolist
 syntax on
