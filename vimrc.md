@@ -21,3 +21,7 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 :nnoremap <C-e> <C-w>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeMapOpenInTab='\r'
+nmap <F3> :NERDTreeToggle<CR>
