@@ -1,0 +1,29 @@
+set number
+set wrap linebreak nolist
+syntax on
+filetype indent on
+set ruler
+set laststatus=2
+set visualbell
+set t_vb=
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set cursorline
+set omnifunc=syntaxcomplete#Complete
+set mouse=a
+colorscheme Monokai 
+:nnoremap <C-e> <C-w>
+:nnoremap <C-t> :tabnew<CR>
+:nnoremap <space> w :bd<CR>
+:nnoremap <F5> :w<CR>
+nmap <F6> :Explore<CR>
+iab xdate <c-r>=strftime("%d/%m/%Y %H:%M")<cr>
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/adelarsq/vim-matchit'
+Plug 'vim-airline/vim-airline'
+Plug 'https://github.com/hail2u/vim-css3-syntax.git'
+Plug 'frazrepo/vim-rainbow'
+Plug 'https://github.com/gregsexton/MatchTag'
+Plug 'mhinz/vim-startify'
+call plug#end()
